@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    .radios {
+      border: 1px solid #ccc;
+    }
+    input[type="radio"] {
+      width: 1rem;
+      height: 1rem;
+      border: 1px solid red;
+      border-radius: 100%;
+      appearance: none;
+    }
+    input[type="radio"]:checked {
+      background: radial-gradient(circle at center, red .3rem, transparent .3em);
+    }
+  </style>
+</head>
+<body>
+  <div class="radios">
+    <input type="radio" value="A" name="abcd" id="">123
+    <input type="radio" value="B" name="abcd" id="">234
+    <input type="radio" value="C" name="abcd" id="">345
+    <input type="radio" value="D" name="abcd" id="">456
+  </div>
+  <script>
+    const radio = document.querySelectorAll('input[type="radio"]')
+    
+    const radios = document.querySelector('.radios')
+    radios.onclick = (e) => {
+      for (let i of radios.children) {
+        if (i.checked) {
+          console.log(i.value);
+        }
+      }
+    }
+  </script>
+</body>
+</html>

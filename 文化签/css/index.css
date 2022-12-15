@@ -1,0 +1,325 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 5vw;
+}
+/*.img {
+	width: 100%;
+	height: 100%;
+}*/
+.page {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.line-center {
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+}
+.pa {
+	position: absolute;
+}
+@keyframes enter{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+#p1 .cards {
+	position: absolute;
+	top: -3px;
+	width: 100vw;
+	text-align: center;
+	transform-origin: center top;
+	animation: card_run 3s ease-in-out infinite;
+}
+#p1 .p1-1 .line {
+	display: block;
+	padding-right: 4vw;
+}
+#p1 .p1-1 .card {
+	display: block;
+}
+@keyframes card_run{
+	0% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+#p1 .p1-1 #loading {
+	position: absolute;
+	top: 60vh;
+	color: #fff;
+	width: 100vw;
+	text-align: center;
+}
+
+/* p2 */
+#p2 {
+	text-align: center;
+}
+#p2 .money .money1 {
+	position: absolute;
+	top: 25vh;
+	left: 25vw;
+	animation: m_run 3s ease-in infinite alternate;
+}
+#p2 .money .money2 {
+	position: absolute;
+	top: 20vh;
+	left: 70vw;
+	animation: m_run 2s ease-in infinite alternate;
+}
+@keyframes m_run{
+	0% {
+		transform: translateY(0vh);
+	}
+	100% {
+		transform: translateY(15vh);
+	}
+}
+#p2 .words {
+	left: 8vw;
+}
+#p2 .words .w1{
+	position: absolute;
+	top: 10vh;
+	left: 30vw;
+	opacity: 0;
+	animation: enter 1s 0s linear reverse forwards;
+}
+#p2 .words .w2{
+	position: absolute;
+	top: 20vh;
+	left: 30vw;
+	opacity: 0;
+	animation: enter 1s 1s linear reverse forwards;
+}
+#p2 .words .w3{
+	position: absolute;
+	top: 15vh;
+	left: 45vw;
+	opacity: 0;
+	animation: enter 1s 2s linear reverse forwards;
+}
+#p2 .words .w4{
+	position: absolute;
+	top: 25vh;
+	left: 45vw;
+	opacity: 0;
+	animation: enter 1s 3s linear reverse forwards;
+}
+#p2 .words .w5{
+	position: absolute;
+	top: 35vh;
+	left: 45vw;
+	opacity: 0;
+	animation: enter 1s 4s linear reverse forwards;
+}
+#p2 .p2-enter {
+	top: 88vh;
+	left: 33vw;
+	color: #fff;
+	font-weight: bold;
+	padding: 1vh 15vw;
+}
+
+/* 音乐播放器 */
+#player {
+	display: none;
+	position: fixed;
+	top: 3vw;
+	right: 3vw;
+	/*animation: player 3s linear infinite;*/
+}
+@keyframes player{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(180deg);}
+}
+
+/* page3 */
+#p3 {
+	background: url(../img/bg3.png) 40%/cover no-repeat;
+}
+
+#p3 .pa img {
+	position: absolute;
+	height: 13vh;
+	width: 15vw;
+	opacity: 0;
+}
+
+#p3 .pa img:nth-child(1){
+	top: 5vh;
+	left: 30vw;
+	animation: enter 1s 0s reverse forwards;
+}
+#p3 .pa img:nth-child(2){
+	top: 10vh;
+	left: 60vw;
+	animation: enter 1s 1s reverse forwards;
+}
+#p3 .pa img:nth-child(3){
+	top: 25vh;
+	left: 15vw;
+	animation: enter 1s 2s reverse forwards;
+}
+#p3 .pa img:nth-child(4){
+	top: 30vh;
+	left: 75vw;
+	animation: enter 1s 3s reverse forwards;
+}
+#p3 .pa img:nth-child(5){
+	top: 40vh;
+	left: 30vw;
+	animation: enter 1s 4s reverse forwards;
+}
+#p3 .pa img:nth-child(6){
+	top: 45vh;
+	left: 60vw;
+	animation: enter 1s 5s reverse forwards;
+}
+#p3 .pa img:nth-child(7){
+	top: 60vh;
+	left: 15vw;
+	animation: enter 1s 6s reverse forwards;
+}
+#p3 .pa img:nth-child(8){
+	top: 65vh;
+	left: 75vw;
+	animation: enter 1s 7s reverse forwards;
+}
+#p3 .pa img:nth-child(9){
+	top: 80vh;
+	left: 30vw;
+	animation: enter 1s 8s reverse forwards;
+}
+#p3 .pa img:nth-child(10){
+	top: 85vh;
+	left: 60vw;
+	animation: enter 1s 9s reverse forwards;
+}
+#p4 {
+	background: url(../img/bg4.png) center/cover;
+}
+#p4 .input {
+	top: 50vh;
+	left: 20vw;
+	background: #fff;
+	height: 6vh;
+	width: 60vw;
+	line-height: 6vh;
+	padding: 0 3vw;
+	border-radius: 1vh;
+}
+#p4 .enter {
+	top: 60vh;
+	left: 25vw;
+	width: 50vw;
+}
+#p4 .enter img {
+	width: 100%;
+}
+
+#p5 {
+	background: url(../img/bg5.png) center/cover;
+}
+
+
+
+input {
+	outline: none;
+	border: none;
+	color: #ccc;
+	background: transparent;
+}
+
+#p5 .circle {
+	top: 85vh;
+}
+
+#p5 .cards img {
+	display: block;
+	position: absolute;
+}
+.card1 {
+	top: 40vh;
+	left: 30vw;
+	width: 40vw;
+	z-index: 4;
+}
+.card2 {
+	top: 40vh;
+	left: 70vw;
+	width: 30vw;
+	z-index: 3;
+	filter:brightness(50%);
+}
+.card3 {
+	top: 25vh;
+	left: 35vw;
+	width: 30vw;
+	z-index: 2;
+	filter:brightness(50%);
+}
+.card4 {
+	top: 40vh;
+	left: 0vh;
+	width: 30vw;
+	z-index: 1;
+	filter:brightness(50%);
+}
+@keyframes c1_left{
+	from{}
+	to{
+	top: 40vh;
+	left: 0vh;
+	width: 30vw;
+	filter:brightness(50%);}
+}
+
+@keyframes c4_left{
+	from{}
+	to{
+	top: 25vh;
+	left: 35vw;
+	width: 30vw;
+	filter:brightness(50%);}
+}
+
+@keyframes c3_left{
+	from{}
+	to{
+	top: 40vh;
+	left: 70vw;
+	width: 30vw;
+	filter:brightness(50%);}
+}
+
+@keyframes c2_left{
+	from{}
+	to{
+	top: 40vh;
+	left: 30vw;
+	width: 40vw;
+	filter: brightness(100%);}
+}
+
+@keyframes scale2{
+	from{}
+	to{transform: scale(2);}
+}

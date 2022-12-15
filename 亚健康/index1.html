@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box {
+				position: absolute;
+				left: 30vw;
+				top: 20vw;
+				border: 1px solid #fff;
+				width: 40vw;
+				height: 7vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.page {
+				position: absolute;
+				left: 0;
+				top: 0;
+				background: #000;
+				width: 100vw;
+				height: 100vh;
+				overflow: hidden;
+			}
+			#box img {
+				display: block;
+				width: 5vw;
+				height: 5vw;
+				margin: 0 1vw;
+			}
+		</style>
+	</head>
+	<body class="page">
+		<div id="box">
+			<img src="img/实心星星.png"/>
+			<img src="img/实心星星.png"/>
+			<img src="img/半颗星星.png"/>
+			<img src="img/空心星星.png"/>
+			<img src="img/空心星星.png"/>
+		</div>
+		<script type="text/javascript">
+			let body = document.body
+			body.onclick = function () {
+				let num = parseFloat(prompt('请输入：'))
+				getStars(num)
+			}
+			function getStars(n) {
+				const box = document.querySelector('#box')
+				box.innerHTML = ''
+				for (let i = 0; i < parseInt(n); i++) {
+					let img = document.createElement('img')
+					img.src = 'img/实心星星.png'
+					box.appendChild(img)
+				}
+				if (n - parseInt(n) === 0.5) {
+					let img = document.createElement('img')
+					img.src = 'img/半颗星星.png'
+					box.appendChild(img)
+				}
+				for (let i = 0; i < parseInt(5 - n); i++) {
+					let img = document.createElement('img')
+					img.src = 'img/空心星星.png'
+					box.appendChild(img)
+				}
+			}
+		</script>
+	</body>
+</html>

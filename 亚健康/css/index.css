@@ -1,0 +1,392 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.mcIco{
+	position: absolute;
+	width: 10vw;
+	top: 2vw;
+	left: 85vw;
+	/*animation: mcIco 2s infinite linear;*/
+}
+
+@keyframes mcIco{
+	from{transform: rotate(0);}
+	to{transform: rotate(360deg);}
+}
+
+#bg1and2,#bg3and4,#bg5,#bg6{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#bg1and2{
+	background: url(../img/bg2.png) no-repeat;
+	background-size: 100vw;
+	overflow: hidden;
+	/*display: none;*/
+}
+/*-------------------页面1---------------------------*/
+#bg1{
+	
+}
+
+.touming{
+	background-color: white;
+	width: 100vw;
+	height: 180vw;
+	opacity: 0.8;
+}
+.wai{
+	position: absolute;
+	background-color: rgb(104,144,133);
+	width: 60vw;
+	top: 90vw;
+	left: 20vw;
+	height: 4vw;
+	border-radius: 2rem;
+}
+.nei{
+	position: absolute;
+	background-color: rgb(255,142,0);
+	width: 0vw;
+	top: 90vw;
+	left: 20vw;
+	height: 4vw;
+	border-radius: 2rem;
+	animation:nei 2s linear forwards;
+}
+
+@keyframes nei{
+	from{}
+	to{width: 60vw;}
+}
+
+.loadingText{
+	position: absolute;
+	top: 90vw;
+	left: 45vw;
+	font-size: .8rem;
+	color: black;
+	font-weight: bold;
+}
+
+
+
+
+.football{
+	position: absolute;
+	top:15vw;
+	left: 8vw;
+	width: 10vw;
+	/*animation: football1 2s infinite linear alternate,football2 1s infinite linear;*/
+}
+
+@keyframes football2{
+	from{transform: rotate(0);}
+	to{transform: rotate(360deg);}
+}
+@keyframes football1{
+	from{}
+	to{left: 80vw;}
+}
+.sun{
+	position: absolute;
+	top: 0;
+	width: 15vw;
+	/*animation: sun 2s infinite linear alternate;*/
+}
+
+@keyframes sun{
+	from{}
+	to{transform: scale(1.5);}
+}
+.abuot_health{
+	position: absolute;
+	width: 30vw;
+	top: 160vw;
+	left: 35vw;
+	/*animation: sun 1s infinite linear alternate;*/
+	
+}
+
+/*-------------------页面3---------------------------*/
+#bg3and4{
+	background: url(../img/bg3and4.png);
+	background-size: 100vw;
+	overflow: hidden;
+	display: none;
+}
+.bg3{
+	display: none;
+}
+.sun2{
+	position: absolute;
+	top: 0;
+	width: 15vw;
+	animation: sun 2s infinite linear alternate;
+}
+
+
+.beijing3{
+	position: absolute;
+	width: 80vw;
+	top: 20vw;
+	left: 10vw;
+
+}
+
+.bg3topBack{
+	position: absolute;
+	top: 5vw;
+	left: 5vw;
+	width: 8vw;
+}
+.bg3btn{
+	position: absolute;
+	width: 30vw;
+	top: 150vw;
+	left: 35vw;
+	animation: sun 1s infinite linear alternate;
+}
+
+
+.wavy{
+	position: absolute;
+	top: 21vw;
+	font-size: 1rem;
+	color: white;
+	left: 30vw;
+}
+
+.wavy span{
+			position: relative;
+			display: inline-block;
+			animation: animate 1s ease-in-out infinite;
+			animation-delay: calc(.1s*var(--i));
+		}
+		
+		@keyframes animate{
+			0%{transform: translateY(0px);}
+			20%{transform: translateY(-24px);}
+			40%,100%{transform: translateY(0px);}
+			
+		}
+/*-------------------页面4---------------------------*/
+.bg4{
+	display: none;
+}
+.beijing4{
+	position: absolute;
+	width: 80vw;
+	top: 20vw;
+	left: 10vw;
+
+}
+.bg4topBack{
+	position: absolute;
+	top: 5vw;
+	left: 5vw;
+	width: 8vw;
+}
+
+.bg4btn{
+	position: absolute;
+	width: 30vw;
+	top: 150vw;
+	left: 35vw;
+	animation: sun 1s infinite linear alternate;
+}
+.xuanxiang div{
+	background-color:rgb(43,122,80);
+	width: 30vw;
+	color: white;
+	font-size: 0.2rem;
+	border-radius: .2rem;
+}
+
+.xuanxiang span{
+	display: inline-block;
+	font-size: 1rem;
+	color: rgb(43,122,80);
+	width: 5vw;
+	height: 5vw;
+	margin: 1vw;
+	text-align: center;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.A{
+	position: absolute;
+	top: 52vw;
+	left: 20vw;
+}
+.B{
+	position: absolute;
+	top: 52vw;
+	left: 52vw;
+}
+
+.C{
+	position: absolute;
+	top: 64vw;
+	left: 20vw;
+}
+.D{
+	position: absolute;
+	top: 64vw;
+	left: 52vw;
+}
+
+.E{
+	position: absolute;
+	top: 76vw;
+	left: 20vw;
+}
+.F{
+	position: absolute;
+	top: 76vw;
+	left: 52vw;
+}
+.G{
+	position: absolute;
+	top: 88vw;
+	left: 20vw;
+}
+.H{
+	position: absolute;
+	top: 88vw;
+	left: 52vw;
+}
+.I{
+	position: absolute;
+	top: 100vw;
+	left: 20vw;
+}
+.J{
+	position: absolute;
+	top:100vw;
+	left: 52vw;
+}
+
+.gou{
+	width: 2vw;
+	display: none;
+}
+
+/*-------------------页面5---------------------------*/
+#bg5{
+	background: url(../img/bg5.png) no-repeat;
+	background-size: 100vw;
+	overflow: hidden;
+	display: none;
+	
+}
+
+.bg5topBack{
+	position: absolute;
+	top: 5vw;
+	left: 5vw;
+	width: 8vw;
+}
+.bg5btn{
+	position: absolute;
+	width: 30vw;
+	top: 160vw;
+	left: 35vw;
+	animation: sun 1s infinite linear alternate;
+	
+}
+
+/*-------------------页面6---------------------------*/
+#bg6{
+	background: url(../img/bg6.png) no-repeat;
+	background-size: 100vw;
+	overflow: hidden;
+	display: none;
+}
+
+.bg6zhengshu{
+	position: absolute;
+	width: 75vw;
+	top: 40vw;
+	left: 10vw;
+}
+
+.bg6topBack{
+	position: absolute;
+	top: 5vw;
+	left: 5vw;
+	width: 8vw;
+}
+.bg6btn{
+	position: absolute;
+	width: 30vw;
+	top: 160vw;
+	left: 35vw;
+	animation: sun 1s infinite linear alternate;
+}
+
+#box {
+	position: absolute;
+	left: 30vw;
+	top: 63vw;
+	/*border: 1px solid #fff;*/
+	width: 40vw;
+	height: 7vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#all-star {
+	position: absolute;
+	left: 30vw;
+	top: 72vw;
+	color: #fff;
+	/*border: 1px solid #fff;*/
+	width: 40vw;
+	height: 7vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#box img {
+	display: block;
+	width: 5vw;
+	height: 5vw;
+	margin: 0 1vw;
+}
+
+
+#all-line {
+	position: absolute;
+	left: 10vw;
+	top: 105vw;
+	color: #fff;
+	/*border: 1px solid #fff;*/
+	width: 80vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#all-line .line {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30vw;
+	height: 8vw;
+	color: red;
+	background: #ccc;
+	margin-bottom: 1vw;
+	border-radius: 1vw;
+}
+#all-line .end {
+	width: 30vw;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    .exit {
+      position: absolute;
+      overflow: hidden;
+    }
+    /* .yb {
+      position: absolute;
+    } */
+    .bg {
+      width: 100px;
+      height: 100px;
+      background: url('img/5-娃娃机出口.png') top/cover no-repeat;
+      overflow: hidden;
+    }
+    .clip {
+      position: absolute;
+      clip: rect(0, 0, auto, 0);
+      animation: dh-clip 2s linear infinite;
+    }
+    @keyframes dh-clip {
+      100% {
+        clip: rect(0, 100vw, auto, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gameover">
+    <!-- <div class="bg">
+      <img class="yb" src="img/5-月饼1.png" alt="">
+    </div> -->
+    <!-- <img class="exit" src="img/5-娃娃机出口.png" alt="">
+    <img class="yb" src="img/5-月饼1.png" alt=""> -->
+    <img class="clip" src="img/2-头部.png" alt="">
+  </div>
+</body>
+</html>

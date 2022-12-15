@@ -1,0 +1,112 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+html, body {
+	font-size:5vw;
+	/*width: 100vw;
+	height: 100vh;
+	overflow: hidden;*/
+}
+
+img {
+	display: block;
+}
+
+.page {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#game {
+	background: url(../img/游戏背景.png) center/cover no-repeat;
+}
+
+#game .kill img {
+	position: absolute;
+	left: 5vw;
+	top: 5vw;
+	width: 50vw;
+}
+
+#game .kill span {
+	position: absolute;
+	left: 33vw;
+	top: 10vw;
+}
+.view {
+	position: relative;
+	border: 1px solid #ccc;
+	/* margin-top: 15vh; */
+	/* height: 70vh; */
+}
+.view .the img {
+	display: inline-block;
+	width: 35vw;
+}
+.view .the {
+	position: absolute;
+	/* border: 1px solid red; */
+}
+.view .the:nth-child(1) {
+	top: 0vh;
+	left: 0vw;
+}
+.view .the:nth-child(2) {
+	top: 10vh;
+	left: 10vw;
+}
+.view .the:nth-child(3) {
+	top: 20vh;
+	left: 20vw;
+}
+.view .the:nth-child(4) {
+	top: 30vh;
+	left: 30vw;
+}
+.view .the:nth-child(5) {
+	top: 40vh;
+	left: 40vw;
+}
+.view .the .wenzi {
+	transform: translate(-50%, -50%);
+}
+.view .the .bee {
+	width: 10vw;
+	transform: translate(-50%, -50%);
+}
+
+.box {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.box .miaozhun {
+	width: 70px;
+	height: 70px;
+	background: url('../img/瞄准.png') center/contain no-repeat;
+	transform: translate(-50%, -50%);
+}
+
+.start {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); */
+	width: 100vw;
+	height: 100vh;
+	background-color: #fffc;
+	z-index: 100;
+}

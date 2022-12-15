@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主页</title>
+  
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .index {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      list-style: none;
+      overflow: hidden;
+    }
+    /* 隐藏滚动条 */
+    .hide-scrollbar {
+      overflow-y: scroll; /* 设置溢出滚动 */
+      white-space: nowrap;
+      overflow-x: hidden;
+      /* 隐藏滚动条 */
+      scrollbar-width: none; /* firefox */
+      -ms-overflow-style: none; /* IE 10+ */
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .box {
+      height: 30vw;
+      width: 60vw;
+      padding: 5vw;
+      margin: 5vw;
+      border-radius: 5vw;
+      box-shadow: 0 0 5vw #ccc;
+      animation-fill-mode: forwards;
+    }
+    .box:nth-of-type(odd) {
+      display: inline-grid;
+      grid-template-columns: 3fr 1fr;
+      justify-items: center;
+      align-items: center;
+      transform: translate(-25vw);
+    }
+    .box .nav {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 1px 1px 1rem #000;
+    }
+    .box:nth-of-type(odd) .nav {
+      animation: textRight 1s ease-out infinite alternate;
+    }
+    @keyframes textRight {
+      0% {
+        transform: translate(0);
+      }
+      100% {
+        transform: translate(15vw);
+      }
+    }
+    .box:nth-of-type(even) {
+      display: inline-grid;
+      grid-template-columns: 1fr 3fr;
+      justify-items: center;
+      align-items: center;
+      transform: translate(25vw);
+    }
+    .box:nth-of-type(even) .nav {
+      animation: textLeft 1s ease-out infinite alternate;
+    }
+    @keyframes textLeft {
+      0% {
+        transform: translate(0);
+      }
+      100% {
+        transform: translate(-15vw);
+      }
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .box .content a {
+      font-size: 2rem;
+      text-shadow: 1px 1px 1px #aaa, -1px -1px 1px #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="index hide-scrollbar">
+    <div class="box">
+      <main class="content">
+        <a href="./打蚊子/index.html" target="_self">打蚊子</a>
+      </main>
+      <nav class="nav">&gt;</nav>
+    </div>
+    <div class="box">
+      <nav class="nav">&lt;</nav>
+      <main class="content">
+        <a href="./连连看/index.html" target="_self">连连看</a>
+      </main>
+    </div>
+    <div class="box">
+      <main class="content">
+        <a href="./华诞画室/index.html" target="_self">华诞画室</a>
+      </main>
+      <nav class="nav">&gt;</nav>
+    </div>
+    <div class="box">
+      <nav class="nav">&lt;</nav>
+      <main class="content">
+        <a href="./文化签/index.html" target="_self">文化签</a>
+      </main>
+    </div>
+    <div class="box">
+      <main class="content">
+        <a href="./亚健康/index.html" target="_self">亚健康</a>
+      </main>
+      <nav class="nav">&gt;</nav>
+    </div>
+    <div class="box">
+      <nav class="nav">&lt;</nav>
+      <main class="content">
+        <a href="./抓月饼/index.html" target="_self">抓月饼</a>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.pa {
+	position: absolute;
+}
+
+#p1 {
+	background: url(../img/1-背景.png) center/cover;
+}
+
+#p1 img:nth-child(1) {
+	position: absolute;
+	top: 20vh;
+	left: -10vw;
+	animation: scales 5s linear reverse infinite;
+}
+#p1 img:nth-child(2) {
+	position: absolute;
+	top: 45vh;
+	left: 45vw;
+	animation: scales2 2s linear reverse infinite;
+}
+#p1 img:nth-child(3) {
+	position: absolute;
+	top: 60vh;
+	left: 35vw;
+	animation: btn1 2s linear infinite;
+}
+
+@keyframes btn1{
+	from{}
+	to{left: 45vw;top: 50vh;opacity: .3;}
+}
+
+@keyframes scales2{
+	from{transform: scale(.3);}
+	to{transform: scale(1);}
+}
+
+@keyframes scales{
+	from{transform: scale(.5);}
+	to{transform: scale(1.5);}
+}
+
+#player {
+	/*display: none;*/
+	display: block;
+	position: fixed;
+	top: 5vw;
+	right: 5vw;
+	animation: xz 3s linear infinite;
+	animation-play-state: paused;
+}
+#player img {
+	width: 10vw;
+}
+@keyframes xz{
+	from{}
+	to{transform: rotate(360deg);}
+}
+
+#p2 {
+	background: url(../img/2-背景.png) center/cover;
+}
+#p2 img:nth-child(1) {
+	position: absolute;
+	left: 78vw;
+	top: 5vh;
+	width: 5vw;
+	opacity: 0;
+	animation: leftp2 2s linear forwards, scales2 2s 4s linear infinite;
+}#p2 img:nth-child(2) {
+	position: absolute;
+	left: 70vw;
+	top: 5vh;
+	width: 5vw;
+	opacity: 0;
+	animation: leftp2 2s 2s linear forwards, scales2 2s 4s linear infinite;
+}#p2 img:nth-child(3) {
+	position: absolute;
+	left: 53vw;
+	top: 58vh;
+	width: 20vw;
+}#p2 img:nth-child(4) {
+	position: absolute;
+	left: 53vw;
+	top: 55vh;
+	width: 20vw;
+	animation: scales2 1.5s linear reverse infinite;
+}
+
+@keyframes leftp2{
+	from{left: 100vw;}
+	to{opacity: 1;}
+}
+
+#p3 {
+	background: url(../img/3-背景.png) center/cover;
+}
+
+#p3 img {
+	margin-top: 40vh;
+	margin-left: 20vw;
+	width: 60vw;
+}
+
+#p4 {
+	background: url(../img/4-背景.png) center/cover;
+}
+
+#p4 .imgs {
+	width: 100vw;
+	height: 100vh;
+}
+#p4 .imgs img:nth-child(1) {
+	position: absolute;
+	bottom: 3vh;
+	width: 100vw;
+	z-index: 5;
+}
+#p4 .imgs img:nth-child(2) {
+	position: absolute;
+	top: 25vh;
+	left: 0;
+	width: 50vw;
+	z-index: 4;
+}
+#p4 .imgs img:nth-child(3) {
+	position: absolute;
+	top: 0vh;
+	left: 0;
+	width: 50vw;
+	z-index: 3;
+}
+#p4 .imgs img:nth-child(4) {
+	position: absolute;
+	top: 26vh;
+	left: 60vw;
+	width: 40vw;
+	z-index: 1;
+}
+#p4 .imgs img:nth-child(5) {
+	position: absolute;
+	top: 44vh;
+	left: 18vw;
+	width: 80vw;
+	z-index: 2;
+}
+
+#p4 .btns {
+	bottom: 0;
+	width: 100vw;
+}
+#p4 .btns img:nth-last-child(1) {
+	position: absolute;
+	bottom: 10vh;
+	left: 20vw;
+	width: 20vw;
+	z-index: 6;
+}#p4 .btns img:nth-last-child(2) {
+	position: absolute;
+	bottom: 10vh;
+	left: 60vw;
+	width: 20vw;
+	z-index: 6;
+}
+
+#p5 {
+	background: url(../img/5-背景.png) center/cover;
+}
